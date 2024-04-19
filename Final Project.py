@@ -133,8 +133,8 @@ def update_output_container(selected_statistics, input_year):
         Y_chart1 = dcc.Graph(figure=px.line(yas, x='Year',y='Automobile_Sales', title='Yearly Automobile Sales'))
             
 # Plot 2 Total Monthly Automobile sales using line chart.
-        mas=data.groupby('Month')['Automobile_Sales'].sum().reset_index()
-        Y_chart2 = dcc.Graph(figure=px.line(mas, x='Month', y='Automobile_Sales', title='Total Monthly Automobiel Sales'))
+        #mas=data.groupby('Month')['Automobile_Sales'].sum().reset_index()
+        Y_chart2 = dcc.Graph(figure=px.line(yearly_data, x='Month', y='Automobile_Sales', title='Total Monthly Automobiel Sales'))
 
             # Plot bar chart for average number of vehicles sold during the given year
         avr_vdata=data.groupby('Vehicle_Type')['Automobile_Sales'].mean().reset_index()
