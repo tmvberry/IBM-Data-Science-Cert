@@ -99,7 +99,7 @@ def update_output_container(selected_statistics, input_year):
             figure=px.pie(exp_rec,
               values= 'Advertising_Expenditure', 
               names='Vehicle_Type',
-              title="Share of Advertising Expenditures by Vehicle Type During Recession")
+              title="Total Advertising Expenditure Share of Vehicle Type During Recession")
         )
 
 # Plot 4 bar chart for the effect of unemployment rate on vehicle type and sales
@@ -110,7 +110,7 @@ def update_output_container(selected_statistics, input_year):
                 x='unemployment_rate',
                 y='Automobile_Sales',
                 color='Vehicle_Type',
-                lables={'unemployment_rate': 'Unemployment Rate', 'Automobile_Sales': 'Average Automobile Sales'},
+                labels={'unemployment_rate': 'Unemployment Rate', 'Automobile_Sales': 'Average Automobile Sales'},
                 title="Effect of Unemployment Rate on Sales of Various Vehicle Types")
         )
 
