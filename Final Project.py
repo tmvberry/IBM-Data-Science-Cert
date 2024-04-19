@@ -25,7 +25,7 @@ app.title = "Automobile Statistics Dashboard"
 #---------------------------------------------------------------------------------
 # Create the dropdown menu options
 dropdown_options = [
-    {'label': 'Yearl Statistics', 'value': 'Yearly Statistics'},
+    {'label': 'Yearly Statistics', 'value': 'Yearly Statistics'},
     {'label': 'Recession Period Statistics', 'value': 'Recession Period Statistics'}
 ]
 # List of years 
